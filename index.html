@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>to婷婷❤</title>
+
+<link href="favicon.ico" rel="shortcut icon" class="icon-love" type="images/x-ico">
+
+<link rel="stylesheet" href="css/love.css">
+
+</head>
+<body>
+
+<div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+    <div class="body_left">
+        <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
+    </div>
+
+    <div class="body_center love">
+        <div class="block">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="border">
+        <div class="border-top"></div>
+        <div class="border-bottom"></div>
+    </div>
+
+    <div class="copyright">
+        <div id="version"><span>Cpdd:</span>&nbsp;宇宙无敌大帅哥</div>
+        <div id="createTime"><span>Time:</span>&nbsp;2025/1/1</div>
+        <div id="author"><span>&copy;&nbsp;</span>刘乐</div>
+    </div>
+</div>
+ <audio id="mySong">
+        <source src="music/love.mp3" type="audio/mp3">
+
+    </audio>
+<script type="text/javascript" src="js/love.js"></script>
+<audio loop src="music/love.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
+<script type="text/javascript">
+//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+    }
+    audioAutoPlay();
+});
+</script>
+
+
+</body>
+</html>
